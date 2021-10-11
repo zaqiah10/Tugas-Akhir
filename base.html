@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/image/iconkemenkes.png') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/color/color-2.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='revolution/css/layers.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='revolution/css/settings.css') }}" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/responsive.css') }}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='owlcarousel/assets/owl.theme.default.min.css') }}"
+    />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/animation/animate.css') }}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/vendor/fontawesome-free/css/all.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/vendor/boxicons/css/boxicons.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/vendor/bootstrap-icons/bootstrap-icons.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/vendor/bootstrap/css/bootstrap.min.css') }}"
+    />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/vendor/aos/aos.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/style.css') }}" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/js/main.js') }}" />
+    {% block head %}{%endblock %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/jquery-countTo.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/jquery.cookie.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/jquery.easing.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/waypoints.min.js') }}"></script>
+
+    <!-- Revolution Slider -->
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/rev-slider.js') }}"></script>
+    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/jquery.themepunch.revolution.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/jquery.themepunch.tools.min.js') }}"
+    ></script>
+    <!--  <script type="text/javascript" src="{{ url_for('static', filename='revolution/js/slider_v1.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='revolution/js/slider_v2.js') }}"></script> -->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.actions.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.carousel.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.kenburn.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.migration.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.navigation.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.parallax.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.slideanims.min.js') }}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='revolution/js/extensions/revolution.extension.video.min.js') }}"
+    ></script>
+    <!--animation-->
+    <script src="{{ url_for('static', filename='assets/animation/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/animation.js') }}"></script>
+    <!--owl.carousel-->
+    <script src="{{ url_for('static', filename='owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='owlcarousel/carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/main.js') }}"></script>
+  </body>
+</html>

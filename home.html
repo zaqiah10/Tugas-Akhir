@@ -1,0 +1,514 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>prediksi covid</title>
+{% endblock %}
+
+{% block body %}
+    <!-- Preloader -->
+    <div id="loading-overlay">
+      <div class="loader"></div>
+    </div>
+
+    <div class="wrapper">
+      <div id="page">
+        <header class="header clearfix">
+          <div id="header" class="container-fluid header">
+            <div id="site-header" class="row">
+              <div class="logo-h2">
+                <a href="home2.html">
+                  <img src="{{ url_for('static', filename='assets/image/logokemenkes2.jpg') }}" alt="image" />
+                </a>
+              </div>
+              <div class="top-header">
+                <div class="top-bar">
+                  <div class="top-infor">
+                    <ul>
+                      <li class="top-location">
+                        <i class="icon-maket-light"></i>
+                        <span class="address">Jl. Letjen Suprapto No.103, Karanganyar, Kec. Subang, Kabupaten Subang, Jawa Barat 41211</span>
+                           
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="top-social">
+                    <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="5"></div>
+                    <ul class="widgets-nav-social">
+                        <li>
+                            <a href="mailto:kontak@kemkes.go.id"><i class="icon-mail-light"></i></a>
+                          </li>
+                      <li>
+                        <a href="mailto:kontak@kemkes.go.id"><i class="fab fa-whatsapp"></i> (119)</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header-content">
+                  <div class="nav-wrap fl-st-2">
+                    <nav id="mainnav" class="mainnav fl-st-2">
+                      <ul class="menu">
+                        <li>
+                            <a href="home.html" title="">Home</a>
+                          </li>
+                        <li>
+                          <a href="index.html" title="">Prediksi</a>
+                        </li>
+                      </ul>
+                      <!-- /.menu -->
+                    </nav>
+                    <!-- /#mainnav -->
+                  </div>
+                </div>
+                <!--header-content-->
+              </div>
+              <!-- /top-header -->
+            </div>
+            <!--/site-header-->
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <div id="main-content" class="site-main clearfix">
+          <div id="content-wrap">
+            <div id="site-content" class="site-content clearfix">
+              <div id="inner-content" class="inner-content-wrap">
+                <div class="page-content">
+                  <!-- SLIDER -->
+                  <div class="rev_slider_wrapper fullwidthbanner-container">
+                    <div id="rev-slider2" class="rev_slider fullwidthabanner">
+                      <ul>
+                        <!-- Slide 1 -->
+                        <li data-transition="random">
+                          <!-- Main Image -->
+                          <img
+                            src="{{ url_for('static', filename='assets/image/gambar0.jpg') }}"
+                            alt="image"
+                            data-bgposition="center center"
+                            data-no-retina
+                          />
+
+                          <!-- Layers -->
+                          <div
+                            class="tp-caption tp-resizeme slide-font-1"
+                            data-x="['left','left','left','center']"
+                            data-hoffset="['4','20','20','-12']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-160','-157','-157','-80']"
+                            data-fontsize="['16']"
+                            data-lineheight="['70','70','40','24']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];"
+                            data-mask_out="x:inherit;y:inherit;"
+                            data-start="700"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-responsive_offset="on"
+                            style="color: white;"
+                          >
+                            WEBSITE
+                          </div>
+
+                          <div
+                            class="tp-caption tp-resizeme slide-font-2"
+                            data-x="['left','left','left','center']"
+                            data-hoffset="['5','20','20','-16']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-80','-80','-80','-30']"
+                            data-fontsize="['68','68','68','45']"
+                            data-lineheight="['85','85','85','80']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];"
+                            data-mask_out="x:inherit;y:inherit;"
+                            data-start="1000"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-responsive_offset="on"
+                            style="color: white;"
+                          >
+                            Prediksi
+                          </div>
+
+                          <div
+                            class="tp-caption tp-resizeme slide-font-2"
+                            data-x="['left','left','left','center']"
+                            data-hoffset="['5','20','20','-12']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-voffset="['4','22','22','20']"
+                            data-fontsize="['68','68','68','45']"
+                            data-lineheight="['65','85','85','80']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];"
+                            data-mask_out="x:inherit;y:inherit;"
+                            data-start="1000"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-responsive_offset="on"
+                            style="color: white;"
+                          >
+                            Covid
+                          </div>
+
+                          <div
+                            class="tp-caption"
+                            data-x="['left','left','left','center']"
+                            data-hoffset="['0','20','20','-12']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-voffset="['108','128','128','90']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];"
+                            data-mask_out="x:inherit;y:inherit;"
+                            data-start="1000"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-responsive_offset="on"
+                          >
+                            <a href="/predict" class="themesflat-button bg-accent big2"><span>Prediksi</span></a>
+                          </div>
+                        </li>
+                        <!-- /End Slide 1 -->
+
+                        <!-- Slide 2 -->
+                        <li data-transition="random">
+                          <!-- Main Image -->
+                          <img
+                            src="{{ url_for('static', filename='assets/image/gambar2.jpg') }}"
+                            alt="image"
+                            data-bgposition="center center"
+                            data-no-retina
+                          />
+
+                          <!-- Layers -->
+                          <div
+                            class="tp-caption tp-resizeme slide-font-1"
+                            data-x="['left','left','left','center']"
+                            data-hoffset="['4','20','20','-12']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-160','-157','-157','-80']"
+                            data-fontsize="['16']"
+                            data-lineheight="['70','70','40','24']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];"
+                            data-mask_out="x:inherit;y:inherit;"
+                            data-start="700"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-responsive_offset="on"
+                            style="color: white;"
+                          >
+                            WEBSITE
+                          </div>
+
+                          <div
+                            class="tp-caption tp-resizeme slide-font-2"
+                            data-x="['left','left','left','center']"
+                            data-hoffset="['5','20','20','-16']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-voffset="['-80','-80','-80','-30']"
+                            data-fontsize="['68','68','68','45']"
+                            data-lineheight="['85','85','85','80']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];"
+                            data-mask_out="x:inherit;y:inherit;"
+                            data-start="1000"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-responsive_offset="on"
+                            style="color: white;"
+
+                          >
+                            Prediksi
+                          </div>
+
+                          <div
+                            class="tp-caption tp-resizeme slide-font-2"
+                            data-x="['left','left','left','center']"
+                            data-hoffset="['5','20','20','-12']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-voffset="['4','22','22','20']"
+                            data-fontsize="['68','68','68','45']"
+                            data-lineheight="['65','85','85','80']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];"
+                            data-mask_out="x:inherit;y:inherit;"
+                            data-start="1000"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-responsive_offset="on"
+                            style="color: white;"
+                          >
+                            Covid
+                          </div>
+
+                          <div
+                            class="tp-caption"
+                            data-x="['left','left','left','center']"
+                            data-hoffset="['0','20','20','-12']"
+                            data-y="['middle','middle','middle','middle']"
+                            data-voffset="['108','128','128','90']"
+                            data-width="full"
+                            data-height="none"
+                            data-whitespace="normal"
+                            data-transform_idle="o:1;"
+                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];"
+                            data-mask_out="x:inherit;y:inherit;"
+                            data-start="1000"
+                            data-splitin="none"
+                            data-splitout="none"
+                            data-responsive_offset="on"
+                          >
+                            <a href="about-us.html" class="themesflat-button bg-accent big2"><span>Prediksi</span></a>
+                          </div>
+                        </li>
+                        <!-- /End Slide 2 -->
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- END SLIDER -->
+                  <section class="features">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="box-ft">
+                            <div class="col-ft wow fadeInUp">
+                              <div class="bd-top"></div>
+                              <div
+                                class="themesflat-spacer clearfix"
+                                data-desktop="53"
+                                data-mobile="53"
+                                data-smobile="53"
+                              ></div>
+                              <div class="box-icon">
+                                <i class="icon-Path-18152 font-size-big"></i>
+                              </div>
+                              <div class="box-wrap">
+                                <div class="title">
+                                  <a href="#">Gejala</a>
+                                </div>
+                                <p class="text-color-title-sidebar">
+                                    Gejala umum berupa demam ≥38°C, batuk kering, dan sesak napas. Jika ada orang yang dalam 14 hari sebelum muncul gejala tersebut pernah melakukan perjalanan ke </p>
+                                    <!-- <p>negara terjangkit,  atau pernah merawat/kontak erat dengan penderita COVID-19, maka terhadap orang tersebut akan dilakukan pemeriksaan laboratorium lebih lanjut untuk memastikan diagnosisnya. -->
+                                </p>
+                                <div class="flat-read-more fl-st-2">
+                                  <a href="#" class="themesflat-button font-default2 ft">
+                                    <span>Read More<i class="fa fa-arrow-right"></i> </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="themesflat-spacer clearfix"
+                                data-desktop="28"
+                                data-mobile="28"
+                                data-smobile="28"
+                              ></div>
+                            </div>
+                            
+                            <div class="col-ft wow fadeInUp">
+                                <div class="bd-top"></div>
+                                <div
+                                  class="themesflat-spacer clearfix"
+                                  data-desktop="53"
+                                  data-mobile="53"
+                                  data-smobile="53"
+                                ></div>
+                                <div class="box-icon">
+                                  <i class="icon-Path-18145 font-size-big"></i>
+                                </div>
+                                <div class="box-wrap">
+                                  <div class="title">
+                                    <a href="#">Penularan</a>
+                                  </div>
+                                  <p class="text-color-title-sidebar">
+                                    Seseorang dapat terinfeksi dari penderita COVID-19. Penyakit ini dapat menyebar melalui tetesan kecil (droplet) dari hidung atau mulut pada saat batuk atau bersin. </p>
+                                    <!-- <p>Droplet tersebut kemudian jatuh pada benda di sekitarnya. Kemudian jika ada orang lain menyentuh benda yang sudah terkontaminasi dengan droplet tersebut, lalu orang itu menyentuh mata, hidung atau mulut (segitiga wajah), maka orang itu dapat terinfeksi COVID-19. Seseorang juga bisa terinfeksi COVID-19 ketika tanpa sengaja menghirup droplet dari penderita. Inilah sebabnya mengapa kita penting untuk menjaga jarak hingga kurang lebih satu meter dari orang yang sakit. -->
+                                  </p>
+                                  <div class="flat-read-more fl-st-2">
+                                    <a href="#" class="themesflat-button font-default2 ft">
+                                      <span>Read More<i class="fa fa-arrow-right"></i> </span>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div
+                                  class="themesflat-spacer clearfix"
+                                  data-desktop="28"
+                                  data-mobile="28"
+                                  data-smobile="28"
+                                ></div>
+                              </div>
+                            <div class="col-ft mgr-none wow fadeInUp">
+                              <div class="bd-top"></div>
+                              <div
+                                class="themesflat-spacer clearfix"
+                                data-desktop="53"
+                                data-mobile="53"
+                                data-smobile="53"
+                              ></div>
+                              <div class="box-icon">
+                                <i class="icon-Path-18178 font-size-big"></i>
+                              </div>
+                              <div class="box-wrap">
+                                <div class="title">
+                                  <a href="#">Vaksinasi COVID-19</a>
+                                </div>
+                                <p class="text-color-title-sidebar">
+                                    Pemerintah Indonesia telah berhasil mencapai 2 juta dosis vaksinasi COVID-19. Data yang dihimpun Satgas COVID-19 pada tanggal 29 September 2021 sebanyak 2.049.125 dosis vaksin yang telah disuntikan.
+                                </p>
+                                <div class="flat-read-more fl-st-2">
+                                  <a href="#" class="themesflat-button font-default2 ft">
+                                    <span>Read More<i class="fa fa-arrow-right"></i> </span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="themesflat-spacer clearfix"
+                                data-desktop="28"
+                                data-mobile="28"
+                                data-smobile="28"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!--/features-->
+                  <section class="about-us">
+                    <div class="container">
+                      <div class="row">
+                        <div
+                          class="themesflat-spacer clearfix"
+                          data-desktop="62"
+                          data-mobile="0"
+                          data-smobile="0"
+                        ></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                          <div class="feature-medal wow fadeInUp">
+                            <img src="{{ url_for('static', filename='assets/image/gambar1.jpg') }}" alt="image" />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                          <div class="box-wrap-ab wow fadeInUp">
+                            <div
+                              class="themesflat-spacer clearfix"
+                              data-desktop="20"
+                              data-mobile="50"
+                              data-smobile="50"
+                            ></div>
+                            <h3 class="heading">Apa itu</h3>
+                            <div class="title-heading pdbt-30">
+                              Virus Corona
+                            </div>
+                            <p>Virus Corona atau severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit karena infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan gangguan ringan pada sistem pernapasan, infeksi paru-paru yang berat, hingga kematian.</p>
+                            <p>Pada kasus yang parah, infeksi virus Corona bisa menyebabkan beberapa komplikasi berikut ini:</p>
+                            <div
+                              class="themesflat-spacer clearfix"
+                              data-desktop="20"
+                              data-mobile="20"
+                              data-smobile="20"
+                            ></div>
+                            <ul class="pdt-15">
+                              <li>
+                                <a href="#"><i class="check-icon"></i>Pneumonia (infeksi paru-paru)</a>
+                              </li>
+                              <li class="mgr-none">
+                                <a href="#"> <i class="check-icon"></i>Infeksi sekunder pada organ lain</a>
+                              </li>
+                              <li>
+                                <a href="#"><i class="check-icon"></i>Gagal ginjal</a>
+                              </li>
+                              <li class="mgr-none">
+                                <a href="#"> <i class="check-icon"></i>Acute cardiac injury</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!--/articles-->
+                </div>
+                <!--.page-content-->
+              </div>
+              <!--#inner-content-->
+            </div>
+            <!--site-content-->
+          </div>
+          <!--#content-wrap-->
+        </div>
+        <!--#main-content-->
+        <footer id="footer" class="fl-st-2">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="bottom">
+                  <div class="themesflat-spacer clearfix" data-desktop="0" data-mobile="0" data-smobile="40"></div>
+                  <div class="coppy fl-left">
+                    <p>Prediksi Covid | 2021 Website</p>
+                  </div>
+                  <ul class="fl-right">
+                    <li>
+                      <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms</a>
+                    </li>
+                    <li>
+                      <a href="#">Help</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="button-go-top">
+          <a href="#" title="" class="go-top">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+      <!--#page-->
+    </div>
+    <!--#wrapper-->
+
+    {% endblock %}

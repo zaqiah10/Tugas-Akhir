@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<title>prediksi covid</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container-contact100">
+        <div class="wrap-contact100"> 
+            <form class="contact100-form validate-form" action="/" method="GET">
+                {% if finalData == 1 %}
+                <span class="contact-form-title">
+                    MENINGGAL
+                </span>
+                {% else %}
+
+                <span class="contact-form-title">
+                    SEMBUH
+                </span>
+                {% endif %}
+                <div class="container-contact100-form-btn">
+                    <div class="wrap-contact100-form-btn">
+                        <div class="contact100-form-bgbtn"></div>
+                        <button class="contact100-form-btn">
+                            <span>
+                                Selesai
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
